@@ -41,4 +41,37 @@ func main() {
 	}()
 	valueFromChannel := <-channel
 	fmt.Println(valueFromChannel)
+
+	hello := A{"hello"}
+	world := B{"world"}
+	HelloWorld(hello)
+	HelloWorld(world)
+
+	var inter interface{}
+	inter = "hello"
+	fmt.Println(inter.(string) + "world")
+}
+
+type A struct {
+	Hello string
+}
+
+type B struct {
+	World string
+}
+
+func (a A) String() string {
+	return a.Hello
+}
+
+func (b B) String() string {
+	return b.World
+}
+
+func HelloWorld(hw C) {
+	fmt.Println(hw.String())
+}
+
+type C interface {
+	String() string
 }
