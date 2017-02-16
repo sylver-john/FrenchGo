@@ -79,4 +79,66 @@ type B struct {
 }
 ```
 
-  
+Déclarer une constante :
+```go
+import(
+	"fmt"
+)
+
+const constante string = "Constante"
+
+func main() {
+```
+
+## Utiliser un opérateur
+
+Faire une somme :
+```go
+var x, y int
+x = 1
+y = 2
+fmt.Println(x + y)
+```
+
+Les opérateurs :
+```
++    &     +=    &=     &&    ==    !=    (    )
+-    |     -=    |=     ||    <     <=    [    ]
+*    ^     *=    ^=     <-    >     >=    {    }
+/    <<    /=    <<=    ++    =     :=    ,    ;
+%    >>    %=    >>=    --    !     ...   .    :
+&^          &^=
+```
+
+## Conditons et boucles
+
+Utiliser un if else :
+```go
+if 1 != 2 {
+	fmt.Println("1 != 2")
+} else if 1 == 3 {
+	fmt.Println("on a un problème")
+} else {
+	fmt.Println("on a définitivement un problème")
+}
+```
+
+Utiliser un switch :
+```go
+switchTo := 1
+switch switchTo {
+case 1:
+	fmt.Println(switchTo)
+case 2:
+	fmt.Println(switchTo)
+default:
+	fmt.Println(switchTo)
+}
+```
+
+Utiliser une boucle for :
+```go
+for compteur := 0; compteur < 5; compteur++ {
+	fmt.Println(compteur)
+}
+```
