@@ -15,7 +15,7 @@ Déclarer le package auquel appartient le fichier :
 package leNomDeMonDossier
 ```
 
-Importer un package (car en Go tout est package, la moindre fonctionnalitée doit être importée) :
+Importer un package (car en Go tout est package, la moindre fonctionnalité doit être importée) :
 ```go
 import(
 	"fmt"
@@ -63,14 +63,14 @@ type A struct {
 	World string
 }
 ```
-Déclarer les attributs avec une majuscule permet de les exportés (attribut public)
+Déclarer les attributs avec une majuscule permet de les exporter (attribut public)
 
-Accèder à ses attributs :
+Accéder à ses attributs :
 ```go
 	a := A{"hello", "world"}
 	fmt.Println(a.Hello, a.World)
  ```
- Attention, on peut accèder aux attributs de cette manière seulement si les attributs sont exportés.
+ Attention, on peut accéder aux attributs de cette manière seulement si les attributs sont exportés.
  
  Déclarer une structure plus complexe :
  ```go
