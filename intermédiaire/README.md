@@ -52,7 +52,7 @@ func main() {
 	}("Hello Wolrd")
 }
 ```
-L'exemple ci-dessus ne va rien afficher car le treah d'exécution principal va continuer et le programme va se terminer. Pour y remèdier on peut placer un blocage artificiel par exemple attendre que l'on presse une touche du clavier :
+L'exemple ci-dessus ne va rien afficher car le thread d'exécution principal va continuer et le programme va se terminer. Pour y remèdier on peut placer un blocage artificiel par exemple attendre que l'on presse une touche du clavier :
 ```go
 func main() {
 	go func(texte string) {
@@ -121,7 +121,7 @@ HelloWorld(world)
 
 ## Les asserts types
 
-L'interface est un objet générique, de nombreuses méthodes retournes des interfaces, pour pouvoir les utiliser il faut les convertir avec l'assert type (ce qui est différent de caster). Par exemple :
+L'interface est un objet générique, de nombreuses méthodes retournent des interfaces, pour pouvoir les utiliser il faut les convertir avec l'assert type (ce qui est différent de caster). Par exemple :
 ```go
 var inter interface{}
 inter = "hello"
