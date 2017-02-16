@@ -1,10 +1,10 @@
 # Les bases
 
-- [Ecrire un fichier go](##ecrire-un-fichier-go)
-- [Déclarer et afficher une variables](##déclarer-et-afficher-une-variables)
-- [Créer et utiliser une strucure](##créer-et-utiliser-une-strucure)
-- [Utiliser un opérateur](##utiliser-un-opérateur)
-- [Conditons et boucles](##conditons-et-boucles)
+- [Ecrire un fichier go](#ecrire-un-fichier-go)
+- [Déclarer et afficher une variables](#déclarer-et-afficher-une-variables)
+- [Créer et utiliser une strucure](#créer-et-utiliser-une-strucure)
+- [Utiliser un opérateur](#utiliser-un-opérateur)
+- [Conditons et boucles](#conditons-et-boucles)
 
 Le fichier main.go contient le code avec les différents exemples.
 
