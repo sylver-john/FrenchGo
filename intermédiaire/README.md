@@ -43,7 +43,7 @@ Déclarer une goroutine anonyme:
 go func(){
 }()
 ```
-On peut aussi lancer une fonction existante dans une goroutine avec le mot clé ``go``
+On peut aussi lancer une fonction existante dans une goroutine avec le mot clé ``go``.
 Pour l'utiliser par exemple :
 ```go
 func main() {
