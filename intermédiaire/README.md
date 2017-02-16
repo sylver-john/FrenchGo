@@ -27,7 +27,7 @@ slice = append(slice, 9)
 slice = append(slice, 10)
 ```
 
-## Les maps :
+## Les maps 
 
 Déclarer et utiliser une map:
 ```go
@@ -79,4 +79,57 @@ go func(){
 }()
 valueFromChannel := <-channel
 fmt.Println(valueFromChannel)
+```
+
+## Les interfaces 
+
+Déclarer une interface :
+```go
+type C interface {
+	String() string
+}
+```
+Implémenter une interface :
+```go
+type A struct {
+	Hello string
+}
+
+type B struct {
+	World string
+}
+
+func (a A) String() string {
+	return a.Hello
+}
+
+func (b B) String() string {
+	return b.World
+}
+
+func HelloWorld(hw C) {
+	fmt.Println(hw.String())
+}
+```
+Pour implémenter une interface il suffit d'implémenter les méthodes de l'interface aux sutructures. Puis on peut ensuite utiliser les méthodes de l'interface :
+```go
+hello := A{"hello"}
+world := B{"world"}
+HelloWorld(hello)
+HelloWorld(world)
+```
+
+## Les asserts types
+
+L'interface est un objet générique, de nombreuses méthodes retournes des interfaces, pour pouvoir les utiliser il faut les convertir avec l'assert type (ce qui est différent de caster). Par exemple :
+```go
+var inter interface{}
+inter = "hello"
+fmt.Println(inter + "world")
+```
+va lever une erreur, il faut utiliser l'assert type de la valeur contenu dans l'interface :
+```go
+var inter interface{}
+inter = "hello"
+fmt.Println(inter.(string) + "world")
 ```
