@@ -111,7 +111,7 @@ func HelloWorld(hw C) {
 	fmt.Println(hw.String())
 }
 ```
-Pour implémenter une interface il suffit d'implémenter les méthodes de l'interface aux sutructures. Puis on peut ensuite utiliser les méthodes de l'interface :
+Pour implémenter une interface il suffit d'implémenter les méthodes de l'interface aux structures. Puis on peut ensuite utiliser les méthodes de l'interface :
 ```go
 hello := A{"hello"}
 world := B{"world"}
