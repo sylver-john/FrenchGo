@@ -52,7 +52,7 @@ func main() {
 	}("Hello Wolrd")
 }
 ```
-L'exemple suivant ne va rien afficher car le treah d'exécution principal va continuer et le programme va se terminer. Pour y remèdier on peut placer un blocage artificiel par exemple attendre que l'on presse une touche du clavier :
+L'exemple ci-dessus ne va rien afficher car le treah d'exécution principal va continuer et le programme va se terminer. Pour y remèdier on peut placer un blocage artificiel par exemple attendre que l'on presse une touche du clavier :
 ```go
 func main() {
 	go func(texte string) {
@@ -71,9 +71,9 @@ Déclarer une channel :
 ```go
 channel := make(chan int)
  ```
- Dans l'exemple suivant, on nourrit la channel avec un entier à partir d'un second thread d'exécution, que l'on consomme ensuite dans le thread principal :
+Dans l'exemple suivant, on nourrit la channel avec un entier à partir d'un second thread d'exécution, que l'on consomme ensuite dans le thread principal :
  ```go
- channel := make(chan int)
+channel := make(chan int)
 go func(){
 	channel <- 1
 }()
