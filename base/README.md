@@ -1,5 +1,11 @@
 # Les bases
 
+- [Ecrire un fichier go](##Ecrire-un-fichier-go)
+- [Déclarer et afficher une variables](##Déclarer-et-afficher-une-variables)
+- [Créer et utiliser une strucure](##Créer-et-utiliser-une-strucure)
+- [Utiliser un opérateur](##Utiliser-un-opérateur)
+- [Conditons et boucles](##Conditons-et-boucles)
+
 Le fichier main.go contient le code avec les différents exemples.
 
 ## Ecrire un fichier go :
