@@ -33,5 +33,3 @@ func worker(workerId int, jobs <-chan int, results chan<- int) {
 		results<- job
 	}
 }
-2017-02-17 14:54:49.7876343 +0100 CET
-2017-02-17 14:54:54.8213031 +0100 CET
