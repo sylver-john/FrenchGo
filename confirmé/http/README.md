@@ -37,3 +37,18 @@ func handlerRequest(w http.ResponseWriter, r *http.Request) {
  - etc...
  
  Pour mon exemple j'utilise Gin.
+ 
+ ## Un exemple d'API avec Gin
+ 
+ Tout d'abord j'utilise la strucure suivante :
+ ```
+ main.go
+ 	- handler
+		- handler.go
+	- router
+		- router.go
+		- routes.go
+	- services
+		- sqlManager.go
+```
+
