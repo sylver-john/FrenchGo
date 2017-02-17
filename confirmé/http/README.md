@@ -36,11 +36,11 @@ func handlerRequest(w http.ResponseWriter, r *http.Request) {
  - [Revel](https://github.com/revel/revel)
  - etc...
  
- Pour mon exemple j'utilise Gin.
+Pour mon exemple j'utilise Gin.
  
- ## Un exemple d'API avec Gin
+## Un exemple d'API avec Gin
  
- Tout d'abord j'utilise la strucure suivante :
+Tout d'abord j'utilise la strucure suivante :
  ```
  main.go
  	- handler
@@ -50,5 +50,26 @@ func handlerRequest(w http.ResponseWriter, r *http.Request) {
 		- routes.go
 	- services
 		- sqlManager.go
+```
+
+Cette structure permet de bien séparer les rôles (MVC) et garantit d'avoir une application maintenable en cas d'évolution.
+Pour pouvoir lancer l'application, il faut tout d'abord installer le package Gin :
+```go
+go get github.com/gin-gonic/gin
+```
+Puis lancer le serveur :
+```go 
+go run src/main.go
+```
+Si le serveur fonctionne vous devez voir les informations Gin :
+```go
+λ go run src\main.go
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /helloworld               --> _/C_/Users/simhoff/FrenchGo/confirm%c3%a9/http/src/handler.HandlerRequest (3 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
 ```
 
