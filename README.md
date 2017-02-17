@@ -12,4 +12,6 @@ Un ensemble de petit tutoriels sur le langage Go en Français
 - [50 Shades of Go](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html)
 - [Stack Overflow](http://stackoverflow.com)
 - [Awesome Go](https://github.com/avelino/awesome-go)
+- [Going Go Programming](https://www.goinggo.net/)
+- [Gopher Academy](https://blog.gopheracademy.com/)
 - la suite à venir
