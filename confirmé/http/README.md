@@ -24,7 +24,7 @@ func handlerRequest(w http.ResponseWriter, r *http.Request) {
 	log.Print("=====doing the job======")
 	w.Write([]byte{1, 2})
 }
-```go
+```
 
  Ici on lance  un serveur web sur localhost:1234 qui nous retourne {1, 2} sur la page / .
  Ce package suffit pour créer un petit serveur web et servir des fichiers statics (Go dispose aussi d'un outil de templating) mais devient insuffisant si l'on souhaite mettre en place un plus gros serveur, comme une API (ce qui reste pour moi la manière utilisation de Go).
