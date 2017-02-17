@@ -16,7 +16,7 @@ Ici je lis un fichier txt qui contient "helloworld", récupère les octets que j
 
 ## Avec le package os et bufio
 
-Pour lire un fichier avec le package os, j'ai besoin du package bufio pour lire le contenue :
+Pour lire un fichier avec le package os, j'ai besoin du package bufio pour lire le contenu :
 ```go
 file, err := os.Open("io.txt")
 if err != nil {
