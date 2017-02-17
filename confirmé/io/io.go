@@ -34,7 +34,7 @@ func main() {
 	/* Ecriture avec ioutil */
 
 	/* Ecriture avec os */
-	newFile, err := os.Create("iobis.txt")
+	newFile, err := os.Create("ioos.txt")
 	if err != nil {
 		fmt.Println("erreur à la création du fichier", err)
 	}
@@ -42,5 +42,17 @@ func main() {
 	if err != nil {
 		fmt.Println("erreur à l'écriture dans le fichier", err)
 	}
+	newFile.Close()
 	/* Ecriture avec bufio */
+	newFileBufio, err := os.Create("iobufio.txt")
+	if err != nil {
+		fmt.Println("erreur à la création du fichier", err)
+	}
+	writer := bufio.NewWriter(newFileBufio)
+    _, err = writer.WriteString("helloworld")
+	if err != nil {
+		fmt.Println("erreur à l'écriture dans le fichier", err)
+	}
+	writer.Flush()
+	newFileBufio.Close()
 }
