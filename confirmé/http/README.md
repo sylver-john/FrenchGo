@@ -68,7 +68,7 @@ Si le serveur fonctionne vous devez voir les informations Gin :
  - using env:   export GIN_MODE=release
  - using code:  gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /helloworld               --> _/C_/Users/simhoff/FrenchGo/confirm%c3%a9/http/src/handler.HandlerRequest (3 handlers)
+[GIN-debug] GET    /helloworld               --> _/C_/***/http/src/handler.HandlerRequest (3 handlers)
 [GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
 [GIN-debug] Listening and serving HTTP on :8080
 ```
