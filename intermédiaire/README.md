@@ -81,6 +81,28 @@ valueFromChannel := <-channel
 fmt.Println(valueFromChannel)
 ```
 
+## Select
+
+Select fonctionne comme un switch mais pour les channles :
+```go
+channel1 := make(chan int)
+channel2 := make(chan int)
+go func(){
+	channel1<- 1
+}()
+go func(){
+	channel1<- 2
+}()
+for j := 0; j < 2; j++ {
+	select {
+		case i := <-channel1:
+			fmt.Println(i)
+		case i := <-channel2:
+			fmt.Println(i)
+	}
+}
+```
+
 ## Les interfaces 
 
 Déclarer une interface :
