@@ -83,7 +83,7 @@ fmt.Println(valueFromChannel)
 
 ## Select
 
-Select fonctionne comme un switch mais pour les channles :
+Select fonctionne comme un switch mais pour les channels :
 ```go
 channel1 := make(chan int)
 channel2 := make(chan int)
