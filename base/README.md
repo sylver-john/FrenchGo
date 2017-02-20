@@ -1,8 +1,8 @@
 # Les bases
 
-- [Ecrire un fichier go](#ecrire-un-fichier-go)
+- [Ecrire un fichier go](#ecrire-un-fichier-go-)
 - [Déclarer et afficher une variables](#déclarer-et-afficher-une-variables)
-- [Créer et utiliser une strucure](#créer-et-utiliser-une-strucure)
+- [Créer et utiliser une strucure](#créer-et-utiliser-une-strucure-)
 - [Utiliser un opérateur](#utiliser-un-opérateur)
 - [Conditons et boucles](#conditons-et-boucles)
 
