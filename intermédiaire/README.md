@@ -1,5 +1,13 @@
 # Connaissances intermédiaires
 
+- [Les slices](#les-slices)
+- [Les maps](#les-maps)
+- [Les goroutines](#les-goroutines)
+- [Les channels](#les-channels)
+- [Select](##select)
+- [Les interfaces](#les-interfaces)
+- [Les asserts types](#les-asserts-types)
+
 Le fichier main.go contient le code avec les différents exemples.
 
 ## Les slices
